@@ -43,11 +43,8 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps/**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix"
-    ],
-    "packages/ui/**/*.{js,ts,jsx,tsx}": [
-      "eslint --fix"
+    "apps/documentation/*.{js,ts}": [
+      "npm run lint"
     ],
     "*.json": [
       "prettier --write"
