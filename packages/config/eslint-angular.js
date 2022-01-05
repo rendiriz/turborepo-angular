@@ -26,12 +26,6 @@ module.exports = {
         'import/parsers': {
           '@typescript-eslint/parser': ['.ts'],
         },
-        'import/resolver': {
-          typescript: {
-            alwaysTryTypes: true,
-            project: ['tsconfig.json'],
-          },
-        },
       },
       rules: {
         '@angular-eslint/directive-selector': [
