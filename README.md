@@ -1,6 +1,4 @@
-# Turborepo starter with NPM
-
-This is an official starter turborepo.
+# Turborepo Angular
 
 ## What's inside?
 
@@ -8,10 +6,9 @@ This turborepo uses [NPM](https://www.npmjs.com/) as a package manager. It inclu
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
+- `documentation`: a [Angular](https://angular.io) app
+- `ui`: a stub Angular component library
+- `config`: `eslint` configurations
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
 
 Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
@@ -25,16 +22,12 @@ This turborepo has some additional tools already setup for you:
 - [Jest](https://jestjs.io) test runner for all things JavaScript
 - [Prettier](https://prettier.io) for code formatting
 
-## Setup
-
-This repository is used in the `npx create-turbo@latest` command, and selected when choosing which package manager you wish to use with your monorepo (NPM).
-
 ### Build
 
 To build all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd turborepo-angular
 npm run build
 ```
 
@@ -43,8 +36,17 @@ npm run build
 To develop all apps and packages, run the following command:
 
 ```
-cd my-turborepo
+cd turborepo-angular
 npm run dev
+```
+
+### Lint
+
+To lint all apps and packages, run the following command:
+
+```
+cd turborepo-angular
+npm run lint
 ```
 
 ### Remote Caching
@@ -54,7 +56,7 @@ Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo
 By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
 
 ```
-cd my-turborepo
+cd turborepo-angular
 npx turbo login
 ```
 
