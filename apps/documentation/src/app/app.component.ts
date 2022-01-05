@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'documentation';
 
-  static getTest() {
+  static getTest(): void {
     return 'asd';
   }
 }
