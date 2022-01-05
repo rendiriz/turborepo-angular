@@ -2,10 +2,10 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts'],
-      parserOptions: {
-        project: ['tsconfig.json'],
-        createDefaultProgram: true,
-      },
+      // parserOptions: {
+      //   project: ['tsconfig.json'],
+      //   createDefaultProgram: true,
+      // },
       extends: [
         'plugin:@angular-eslint/recommended',
         'plugin:@angular-eslint/template/process-inline-templates',
