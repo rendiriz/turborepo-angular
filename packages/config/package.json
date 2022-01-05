@@ -4,8 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "files": [
-    "eslint-angular.js",
-    "eslint-preset.js"
+    "eslint-angular.js"
   ],
   "dependencies": {
     "@angular-eslint/builder": "^13.0.1",
