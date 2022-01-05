@@ -1,0 +1,63 @@
+module.exports = {
+  overrides: [
+    {
+      files: ['*.ts'],
+      parserOptions: {
+        project: ['tsconfig.json'],
+        createDefaultProgram: true,
+      },
+      extends: [
+        'eslint:recommended',
+        'plugin:@angular-eslint/recommended',
+        'plugin:@angular-eslint/template/process-inline-templates',
+        'plugin:@typescript-eslint/recommended',
+        'airbnb',
+        'airbnb-typescript',
+        'plugin:import/errors',
+        'plugin:import/warnings',
+        'plugin:import/typescript',
+        'prettier',
+      ],
+      plugins: ['import', '@typescript-eslint'],
+      settings: {
+        next: {
+          rootDir: ['apps/documentation/'],
+        },
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts'],
+        },
+        'import/resolver': {
+          typescript: {
+            alwaysTryTypes: true,
+            project: ['tsconfig.json'],
+          },
+        },
+      },
+      rules: {
+        '@angular-eslint/directive-selector': [
+          'error',
+          {
+            type: 'attribute',
+            prefix: 'app',
+            style: 'camelCase',
+          },
+        ],
+        '@angular-eslint/component-selector': [
+          'error',
+          {
+            type: 'element',
+            prefix: 'app',
+            style: 'kebab-case',
+          },
+        ],
+        'import/prefer-default-export': 'off',
+      },
+    },
+    {
+      files: ['*.html'],
+      extends: ['plugin:@angular-eslint/template/recommended'],
+      rules: {},
+    },
+  ],
+  ignorePatterns: ['projects/**/*', 'node_modules', '.turbo'],
+};
