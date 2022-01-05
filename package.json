@@ -43,7 +43,7 @@
     "node": ">=14.0.0"
   },
   "lint-staged": {
-    "apps/documentation/*.{js,ts}": [
+    "apps/**/*.{js,ts}": [
       "eslint --fix"
     ],
     "*.json": [
