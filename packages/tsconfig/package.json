@@ -4,6 +4,7 @@
   "private": true,
   "main": "index.js",
   "files": [
+    "angular.json",
     "base.json",
     "nextjs.json",
     "react-library.json"
