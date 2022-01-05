@@ -10,23 +10,23 @@ module.exports = {
         'plugin:@angular-eslint/recommended',
         'plugin:@angular-eslint/template/process-inline-templates',
         // 'eslint:recommended',
-        'plugin:@typescript-eslint/recommended',
-        'airbnb',
-        'airbnb-typescript',
-        'plugin:import/errors',
-        'plugin:import/warnings',
-        'plugin:import/typescript',
-        'prettier',
+        // 'plugin:@typescript-eslint/recommended',
+        // 'airbnb',
+        // 'airbnb-typescript',
+        // 'plugin:import/errors',
+        // 'plugin:import/warnings',
+        // 'plugin:import/typescript',
+        // 'prettier',
       ],
-      plugins: ['import', '@typescript-eslint'],
-      settings: {
-        next: {
-          rootDir: ['apps/documentation/'],
-        },
-        'import/parsers': {
-          '@typescript-eslint/parser': ['.ts'],
-        },
-      },
+      // plugins: ['import', '@typescript-eslint'],
+      // settings: {
+      //   next: {
+      //     rootDir: ['apps/documentation/'],
+      //   },
+      //   'import/parsers': {
+      //     '@typescript-eslint/parser': ['.ts'],
+      //   },
+      // },
       rules: {
         '@angular-eslint/directive-selector': [
           'error',
@@ -44,7 +44,7 @@ module.exports = {
             style: 'kebab-case',
           },
         ],
-        'import/prefer-default-export': 'off',
+        // 'import/prefer-default-export': 'off',
       },
     },
     {
