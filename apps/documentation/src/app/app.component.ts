@@ -12,5 +12,6 @@ export class AppComponent {
     console.log('Test');
     console.log('Test');
     console.log('Test');
+    console.log('Test');
   }
 }
