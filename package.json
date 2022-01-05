@@ -44,7 +44,7 @@
   },
   "lint-staged": {
     "apps/documentation/*.{js,ts}": [
-      "npm run lint"
+      "eslint --fix"
     ],
     "*.json": [
       "prettier --write"
