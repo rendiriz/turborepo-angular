@@ -12,6 +12,7 @@ module.exports = {
         'plugin:import/warnings',
         'plugin:import/typescript',
         'plugin:prettier/recommended',
+        'plugin:rxjs/recommended',
       ],
       plugins: ['import', '@typescript-eslint'],
       settings: {
