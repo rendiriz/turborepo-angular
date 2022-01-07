@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +7,4 @@ import { Component, OnInit, OnChanges } from '@angular/core';
 })
 export class AppComponent {
   title = 'documentation';
-
-  constructor() {}
-
-  static getTest(): void {
-    return 'asd';
-  }
 }

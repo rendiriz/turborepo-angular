@@ -2,25 +2,20 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts'],
-      // parserOptions: {
-      //   project: ['tsconfig.json'],
-      //   createDefaultProgram: true,
-      // },
       extends: [
-        'eslint:recommended',
         'plugin:@angular-eslint/recommended',
         'plugin:@angular-eslint/template/process-inline-templates',
         'plugin:@typescript-eslint/recommended',
-        'airbnb',
-        'airbnb-typescript',
+        'airbnb-base',
+        'airbnb-typescript/base',
         'plugin:import/errors',
         'plugin:import/warnings',
         'plugin:import/typescript',
-        'prettier',
+        'plugin:prettier/recommended',
       ],
       plugins: ['import', '@typescript-eslint'],
       settings: {
-        next: {
+        angular: {
           rootDir: ['apps/documentation/'],
         },
         'import/parsers': {
@@ -44,7 +39,12 @@ module.exports = {
             style: 'kebab-case',
           },
         ],
+        'no-console': ['error', { allow: ['info', 'warn', 'error'] }],
+        'no-return-assign': 'off',
+        'lines-between-class-members': 'off',
         'import/prefer-default-export': 'off',
+        'import/no-unresolved': 'off',
+        '@typescript-eslint/lines-between-class-members': 'off',
       },
     },
     {
