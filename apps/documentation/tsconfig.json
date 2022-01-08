@@ -1,3 +1,9 @@
 {
   "extends": "tsconfig/angular.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@core/*": ["src/app/_core/*"]
+    }
+  }
 }
